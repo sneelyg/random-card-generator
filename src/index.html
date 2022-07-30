@@ -17,14 +17,17 @@
 <h1>Random Card Generator</h1>
       <div class = " d-flex rounded bg-light"  id="carta" >
 
-        <div class="d-flex">
-          <div class="mr-auto pinta"  id=  "pinta-arriba"><p>pinta</p></div>
+        <div class="row"><!--PINTA ARRIBA-->
+          <div class=" col-3 pinta"  id="pinta-arriba"></div>
         </div>
-        <div class="d-flex  mt-5 pt-5" >
-          <div class = "mx-auto" id="letra"> Numero</div>
+        <div class="row mt-5 pt-2" ><!--numero de carta-->
+          <div class = "col-3 mx-auto mt-5 pt-5" id="letra-centro"> </div>
         </div>
-        <div class="d-flex flex-column mt-auto" >
-          <div class="pinta ml-auto" id=  "pinta-abajo"><p>pinta ab</p></div>
+        <div class="row  mt-auto" ><!--PINTA ABAJO-->
+          <div class="col-3"></div>
+          <div class="col-3"></div>
+          <div class="col-3 pinta mx-auto" id="pinta-abajo"></div>
+          
         </div>
 
 

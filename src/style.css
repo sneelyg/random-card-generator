@@ -12,3 +12,33 @@ body {
 #letra {
   height: 120px;
 }
+
+.diamante {
+  color: red;
+}
+
+.corazon {
+  color: red;
+}
+
+#pintaarriba {
+  margin-left: 7px;
+  font-size: 60px;
+}
+#pintaabajo {
+  font-size: 60px;
+  position: relative;
+  top: -20px;
+  left: 10px;
+  width: 20px;
+  height: 50px;
+}
+
+.abajo {
+}
+#numerocarta {
+  font-size: 80px;
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
