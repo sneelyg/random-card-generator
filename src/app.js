@@ -19,7 +19,7 @@ const temporizador = setInterval(generar_carta, 5000);
 function generar_carta() {
   console.log("generando carta");
   let random_pinta = Math.floor(Math.random() * 4); //genera numero del 0 al 3
-  let random_letra = Math.floor(Math.random() * 13); //Genera numero del 0 al 12
+  let random_letra = Math.floor(Math.random() * 14); //Genera numero del 0 al 12
   let pinta = posibles_pintas[random_pinta];
   let letra = posibles_cartas[random_letra];
   console.log(pinta + "    " + letra);
