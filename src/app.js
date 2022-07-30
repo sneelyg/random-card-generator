@@ -10,6 +10,12 @@ window.onload = function() {
   console.log("Hello Rigo from the console!");
   generar_carta();
 };
+var boton = document.querySelector("#generador");
+boton.addEventListener("click", () => {
+  generar_carta();
+});
+
+const temporizador = setInterval(generar_carta, 5000);
 function generar_carta() {
   console.log("generando carta");
   let random_pinta = Math.floor(Math.random() * 4); //genera numero del 0 al 3
@@ -21,6 +27,19 @@ function generar_carta() {
   let pinta_arriba = document.querySelector("#pinta-arriba");
   let pinta_abajo = document.querySelector("#pinta-abajo");
   let letra_carta = document.querySelector("#letra-centro");
+
+  //Primero revisamos si existen elementos ya creados para borrarlos
+  while (pinta_arriba.firstChild) {
+    pinta_arriba.removeChild(pinta_arriba.firstChild);
+  }
+  while (pinta_abajo.firstChild) {
+    pinta_abajo.removeChild(pinta_abajo.firstChild);
+  }
+  while (letra_carta.firstChild) {
+    letra_carta.removeChild(letra_carta.firstChild);
+  }
+  //
+  //
 
   //Crear un H1 para poner en la parte superior de la carta
   let h1_pinta = document.createElement("h1");
